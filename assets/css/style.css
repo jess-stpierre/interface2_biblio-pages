@@ -1,0 +1,108 @@
+body {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titre {
+    display: flex;
+    justify-content: space-between;
+
+    & img{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.categorie {
+    margin: 20px;
+}
+
+.livres {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+
+    & img {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+.livre {
+    width: 250px;
+    margin: 20px;
+
+    & div {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        & button {
+            height: 20px;
+        }
+    }
+}
+
+.boite {
+    position: fixed;
+    z-index: 500;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--espace-md);
+    border: 2px solid var(--couleur-primaire);
+    background-color: #4d4d4d80;
+    color: var(--couleur-texte);
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+
+    & .fermer {
+        position: absolute;
+        top: 5%;
+        left: 82%;
+        right: 18%;
+    }
+
+    & .contenuBoite {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 650px;
+        background-color: #ffffff;
+
+        & img {
+            width: 350px;
+            height: 450px;
+            object-fit: cover;
+            margin: 25px;
+        }
+
+        & div {
+            width: 50%;
+            margin: 25px;
+        }
+    }
+}
+
+.sousLigne {
+    text-decoration: underline;
+}
+
+.pasScroll {
+    overflow: hidden;
+}
