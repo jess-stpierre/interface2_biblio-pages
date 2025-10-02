@@ -1,6 +1,6 @@
 // Imports
 
-import livres from "./data/livres.js";
+import livres from "./assets/js/data/livres.js";
 import Filtres from "../classes/Filtres.js";
 
 // variables globale
