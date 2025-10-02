@@ -1,5 +1,5 @@
 // imports
-import Livre from "../classes/livre.js";
+import Livre from "../classes/Livre.js";
 
 // class Filtres
 class Filtres {
